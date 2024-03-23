@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  
+  
+  margin:0;
+  padding: 0;
+  font-size: 11px;
+
+}
+p {
+  margin: 0;;
+}
+.grid {
+  margin-top:8px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap:1.5rem;
+  margin-left:8px;
+  margin-right:8px;
+  }
+
+.first-graduate {
+  background-color: rgb(171, 84, 247); 
+grid-column: span 2;
+
+}
+.first-graduate, .second-graduate, .third-graduate, .fourth-graduate, .fifth-graduate {
+  border-radius: 20px;
+  padding:8px 8px 8px 8px;
+  box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.second-graduate {
+  background-color:rgb(66, 66, 90);
+
+ }
+ .third-graduate {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end:3 ;
+ }
+ .fifth-graduate {
+  background-color: rgb(6, 6, 36);
+  grid-column: 2/4;;
+  
+ }
+ 
+.profile-pic {
+  border-radius: 30px;
+  
+}
+.first-graduate .profile-pic, .fifth-graduate .profile-pic {
+  border: 2px solid purple;
+}
+.respodent-details {
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.respodent-name {
+  color:white;
+  font-weight: bold;
+  margin-bottom:8px;
+}
+
+.verification {
+  color:rgb(184, 173, 173);
+
+}
+
+.highlight {
+  color:white;
+  font-weight: bold;
+
+}
+.highlight-black {
+  color:rgb(94, 89, 89);
+  font-weight: bold;
+
+}
+
+.opinion {
+  color:rgb(177, 175, 175);
+  margin-top: 10px;
+ 
+}
+
+.respodent-name-black {
+  color:rgb(115, 98, 98);
+  font-weight: bold;
+  
+} 
+
+@media (max-width:750px ) {
+  .grid {
+    display: flex;
+      flex-direction: column;
+       }
+}
